@@ -1,4 +1,5 @@
 # rock-paper-scissors
 - Use HTML, CSS, and Javascript to create a rock paper scissors game.
 - Project Updates:
-    - TBA
+    - Javascript code completed
+    - Need to work on: HTML and CSS
