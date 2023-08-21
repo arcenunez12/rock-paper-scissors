@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection) {
     // Set the two parameters to be lowercase
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
-    // If else statements
+    // If else statements to determine who wins
     if (playerSelection == "rock" && computerSelection == "scissors") {
         return "You win! Rock beats Scissors!";
     } else if (computerSelection == "rock" && playerSelection == "scissors") {
@@ -49,17 +49,25 @@ function playRound(playerSelection, computerSelection) {
 // const computerChoice = getComputerChoice();
 // console.log(playRound(playerChoice, computerChoice));
 
+// Function that will play 5 rounds of rock, paper, scissors
 function game() {
+    // Number of rounds is 5
     let numOfRounds = 5;
-    // let rounds = 0;
+    // For loop to play 5 rounds
     for (let i = 0; i < numOfRounds; i++) {
+        // Get the player's choice
         let playerChoice = prompt("Enter rock, paper, or scissors");
+        // Log it to the console
         console.log("Your choice: " + playerChoice);
+        // Get computer's choice
         let computerChoice = getComputerChoice();
+        // Log it to the console
         console.log("Computer's choice: " + computerChoice);
+        // Call the playRound() function, pass in the correct parameters
+        // and log the winner to the console.
         console.log(playRound(playerChoice, computerChoice));
     }
-    // console.log(rounds);
 }
 
+// Call the game() function to see it work in the web browser.
 game();
